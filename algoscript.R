@@ -3,7 +3,7 @@ rm(list = ls())
 
 #let's do some line fitting
 #import the data
-path.atp <- "C:/Users/alexf/Documents/My Docs/Projects/linfit/timedata.csv"
+path.atp <- "timedata.csv"
 timeinfo.atp <- read.csv(path.atp, header = F)
 
 #set some vars
@@ -40,5 +40,3 @@ with(timeinfo.atp, abline(lm(sel~n), col = 'red', lwd = 2))
 with(timeinfo.atp, abline(lm(mer~n), col = 'red', lwd = 2))
 with(timeinfo.atp, abline(lm(qik~n), col = 'red', lwd = 2))
 with(timeinfo.atp, abline(lm(pyt~n), col = 'red', lwd = 2))
-
-#these best fit lines look like booty
